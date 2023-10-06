@@ -151,14 +151,14 @@
     <sonar.exclusions>src/main/java/org/apache/maven/shared/dependency/tree/DependencyTreeResolutionListener.java,target/generated-sources/**/*</sonar.exclusions>
     <gitRepositoryName>sonar-scanner-maven</gitRepositoryName>
   </properties>
-<!--  <repositories>
+  <repositories>
     <repository>
         <id>central</id>
-        <url>https://repo.maven.apache.org/maven2</url>
+        <url>https://mvnrepository.com</url>
     </repository>
   </repositories>
 
-
+<!--
   <repositories>
     <repository>
         <id>central</id>
