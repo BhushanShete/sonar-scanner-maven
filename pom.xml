@@ -3,7 +3,9 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.github.BhushanShete</groupId>
   <artifactId>sonar-scanner-maven</artifactId>
-  <version>68.0.0.247</version>
+  <version>3.11-SNAPSHOT</version>
+  <packaging>maven-plugin</packaging>
+<!--  <version>68.0.0.247</version> -->
   
   <name>artigo-boas-praticas-medium</name>
   <description>Implementações dos exemplos do artigo "Tem um tempinho para conversarmos sobre boas práticas de programação com Java?"</description>
