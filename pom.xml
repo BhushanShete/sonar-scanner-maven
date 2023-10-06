@@ -317,7 +317,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.9.4</version> <!-- Use a valid version -->
+        <version>3.9</version> <!-- Use a valid version -->
         <configuration>
           <source>17</source> <!-- Set your Java version -->
           <target>17</target>
