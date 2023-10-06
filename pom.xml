@@ -159,6 +159,14 @@
   </repositories>
 -->
 
+  <repositories>
+    <repository>
+        <id>central</id>
+        <url>https://oss.sonatype.org/content/repositories/releases</url>
+    </repository>
+  </repositories>
+
+
   <dependencies>
     <dependency>
       <groupId>org.apache.maven</groupId>
