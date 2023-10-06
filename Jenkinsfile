@@ -1,5 +1,9 @@
 pipeline {
     agent any
+    tools {
+        // Specify the name of the Maven installation configured in Jenkins
+        mvn 'mvn'
+    }
 
     stages {
         stage('Checkout') {
@@ -18,6 +22,14 @@ pipeline {
                           userRemoteConfigs: [[url: 'https://github.com/BhushanShete/sonar-scanner-maven.git']]])
             }
         }
+        
+    
+        stage('Build') {
+            steps {
+                // Use 'mvn' command here
+                bat 'mvn clean install -U'
+            }
+        }
 
         stage('SonarQube Analysis') {
             environment {
@@ -25,7 +37,6 @@ pipeline {
             }
             steps {
                 script {
-                    bat "mvn clean install -U"
                     def scannerHome = tool name: 'SonarScanner', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
                     def mvn = tool 'mvn';
                     withSonarQubeEnv('bhushan') {
