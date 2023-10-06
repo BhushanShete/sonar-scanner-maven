@@ -7,7 +7,6 @@
     <groupId>io.github.BhushanShete</groupId>
     <artifactId>sonar-scanner-maven</artifactId>
     <version>1.0.0</version>
-    <relativePath />
   </parent>
   
   <name>artigo-boas-praticas-medium</name>
