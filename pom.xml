@@ -151,13 +151,13 @@
     <sonar.exclusions>src/main/java/org/apache/maven/shared/dependency/tree/DependencyTreeResolutionListener.java,target/generated-sources/**/*</sonar.exclusions>
     <gitRepositoryName>sonar-scanner-maven</gitRepositoryName>
   </properties>
-  <repositories>
+<!--  <repositories>
     <repository>
         <id>central</id>
         <url>https://repo.maven.apache.org/maven2</url>
     </repository>
   </repositories>
-
+-->
 
   <dependencies>
     <dependency>
@@ -165,6 +165,11 @@
       <artifactId>maven-plugin-api</artifactId>
       <version>${mavenVersion}</version>
       <scope>provided</scope>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.maven</groupId>
+        <artifactId>maven-plugin-api</artifactId>
+        <version>3.0.6</version> <!-- Use a version that is available -->
     </dependency>
     <dependency>
       <groupId>org.apache.maven</groupId>
