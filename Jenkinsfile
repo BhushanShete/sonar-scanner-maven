@@ -15,7 +15,7 @@ pipeline {
                           doGenerateSubmoduleConfigurations: false, 
                           extensions: [], 
                           submoduleCfg: [], 
-                          userRemoteConfigs: [[url: 'https://github.com/BhushanShete/artigo-boas-praticas-medium.git']]])
+                          userRemoteConfigs: [[url: 'https://github.com/BhushanShete/sonar-scanner-maven.git']]])
             }
         }
 
@@ -28,7 +28,7 @@ pipeline {
                     def scannerHome = tool name: 'SonarScanner', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
                     def mvn = tool 'mvn';
                     withSonarQubeEnv('bhushan') {
-                        bat "${mvn} clean verify sonar:sonar -Dsonar.projectKey=java2 -Dsonar.projectName='java2'"
+                        bat "${mvn} clean verify sonar:sonar -Dsonar.projectKey=java2- -Dsonar.projectName='java2-'"
 
                     }
                 }
