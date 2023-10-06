@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.github.BhushanShete</groupId>
   <artifactId>sonar-scanner-maven</artifactId>
-  <version>3.11-SNAPSHOT</version>
+  <version>3.9.4-SNAPSHOT</version>
   <packaging>maven-plugin</packaging>
 <!--  <version>68.0.0.247</version> -->
   
@@ -309,7 +309,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.11.0</version> <!-- Use a valid version -->
+        <version>3.9.4</version> <!-- Use a valid version -->
         <configuration>
           <source>17</source> <!-- Set your Java version -->
           <target>17</target>
