@@ -25,6 +25,7 @@ pipeline {
             }
             steps {
                 script {
+                    bat "mvn clean install -U"
                     def scannerHome = tool name: 'SonarScanner', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
                     def mvn = tool 'mvn';
                     withSonarQubeEnv('bhushan') {
