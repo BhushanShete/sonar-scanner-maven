@@ -38,9 +38,9 @@ pipeline {
             steps {
                 script {
                     def scannerHome = tool name: 'SonarScanner', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
-                    def mvn = "C:\\apache-maven-3.9.4\\bin\\mvn.cmd";
+                   /* def mvn = "mvn";*/
                     withSonarQubeEnv('bhushan') {
-                        bat "C:\\apache-maven-3.9.4\\bin\\mvn.cmd clean verify sonar:sonar -Dsonar.projectKey=java2- -Dsonar.projectName='java2-'"
+                        bat "${maven} clean verify sonar:sonar -Dsonar.projectKey=java2- -Dsonar.projectName='java2-'"
 
                     }
                 }
