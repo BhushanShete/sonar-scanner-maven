@@ -123,11 +123,7 @@
       <scope>provided</scope>
     </dependency>
 
-    <dependency>
-      <groupId>org.sonarsource.scanner.api</groupId>
-      <artifactId>sonar-scanner-api</artifactId>
-      <version>2.16.3.1081</version>
-    </dependency>
+
 
     <dependency>
       <groupId>commons-lang</groupId>
