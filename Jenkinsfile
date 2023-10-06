@@ -23,14 +23,14 @@ pipeline {
             }
         }
         
-    
+/*    
         stage('Build') {
             steps {
                 // Use 'mvn' command here
-                bat '"C:\\apache-maven-3.9.4\\bin\\mvn" clean install -U -U'
+                bat '"C:\\apache-maven-3.9.4\\bin\\mvn" clean install -U'
             }
         }
-
+*/
         stage('SonarQube Analysis') {
             environment {
                 scannerHome = tool name: 'SonarScanner', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
